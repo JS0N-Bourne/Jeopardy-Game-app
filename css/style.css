@@ -1,0 +1,110 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+}
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* width: 100%;
+  height: 890px;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(../images/jeopardy.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  margin-bottom: 0;
+   */
+  background-color:lightgrey; 
+}
+
+h1 {
+  font-size 2.5rem;
+  margin-bottom: 10px;
+}  
+
+button {
+  font-size: 1rem;
+  margin-bottom:15px;
+}
+
+span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#game-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width:75vw;
+  margin: 10px auto;
+}
+
+#category-row {
+  display:flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#clue-board {
+  flex-direction: column;
+}
+
+.clue-row {
+  display: flex;
+}
+
+.clue-box {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:2px solid white;
+  background-color: blue;
+  color:white;
+  border-radius: 5px;
+  margin: 5px;
+  font-size:2rem;
+  height: 100px;
+  font-weight: bold;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.category-box {
+  font-size:.8rem;
+  line-height:25px;
+}
+
+.clicked-box {
+  font-size: 1rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
