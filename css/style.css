@@ -17,6 +17,11 @@
 	clear: both;
 }
 
+@import url(//db.onlinewebfonts.com/c/ca04e9de21ea3edb850bf0536d14679f?family=Swiss+911);
+
+@font-face {font-family: "Swiss 911"; src: url("//db.onlinewebfonts.com/t/ca04e9de21ea3edb850bf0536d14679f.eot"); src: url("//db.onlinewebfonts.com/t/ca04e9de21ea3edb850bf0536d14679f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ca04e9de21ea3edb850bf0536d14679f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ca04e9de21ea3edb850bf0536d14679f.woff") format("woff"), url("//db.onlinewebfonts.com/t/ca04e9de21ea3edb850bf0536d14679f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ca04e9de21ea3edb850bf0536d14679f.svg#Swiss 911") format("svg"); }
+
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -25,46 +30,59 @@ html {
 
 body {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  /* width: 100%;
+  font-family: "Swiss 911", sans-serif;  
+  width: 100%;
   height: 890px;
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(../images/jeopardy.jpeg);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.0)),
+    url(../images/jeopardy.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
+  background-position: top;
+  background-size: auto 126%;
   margin-bottom: 0;
-   */
-  background-color:lightgrey; 
+  background-color:black; 
 }
 
 h1 {
-  font-size 2.5rem;
+  font-size 5.5rem;
   margin-bottom: 10px;
+  color: white;
 }  
 
-button {
-  font-size: 1rem;
-  margin-bottom:15px;
+#title {
+  height:50px;
 }
 
-span {
-  font-size: 1.5rem;
-  font-weight: bold;
+.logo {
+  padding-top:30px;
+  margin-bottom:0px;
+}
+
+.logo img {
+  width:700px;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#hero-section {
+  text-align:center;
+  width: 100vw;
+  height:565px;
+  margin-top:130px;
+  height: 579px;
 }
 
 #game-container {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width:75vw;
-  margin: 10px auto;
+  max-width:960px;
+  height:579px;
+  margin: 0px auto;
 }
 
 #category-row {
   display:flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom:8px;
 }
 
 #clue-board {
@@ -79,26 +97,66 @@ span {
   display:flex;
   align-items: center;
   justify-content: center;
-  border:2px solid white;
-  background-color: blue;
-  color:white;
+  background-color: none;
+  color:rgb(192,151,118);
   border-radius: 5px;
-  margin: 5px;
-  font-size:2rem;
-  height: 100px;
-  font-weight: bold;
+  margin-top:3px;
+  margin-bottom: 0px;
+  font-size:3.3rem;
+  text-shadow: black 5px 5px;
+  height: 90px;
   flex: 1;
   text-transform: uppercase;
 }
 
+.clue-box:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor:pointer;
+}
+
 .category-box {
-  font-size:.8rem;
+  font-size:1.1rem;
+  color:white;
+  text-shadow: black 2px 2px;
+  letter-spacing: 1px;;
   line-height:25px;
 }
 
 .clicked-box {
-  font-size: 1rem;
+  font-size: 2.5rem;
 }
+
+button {
+  font-size: 1.3rem;
+  margin-top:5px;
+  padding:8px 35px 5px 35px;
+  border-radius: 30px;
+  font-family: 'Teko', sans-serif;
+  color: lightgrey;
+  border:2px solid hotpink;
+  background-color:transparent;
+  letter-spacing: .2px;
+}
+
+button:hover {
+  border:2px solid purple;
+  color: darkgrey;
+
+}
+
+.score-counter {
+  margin-top:120px;
+}
+
+span {
+  font-size: 5.0rem;
+  font-weight: bold;
+  font-family: 'Teko', sans-serif;
+  color:white;
+  text-shadow: black 5px 5px;
+  letter-spacing: 2px;
+}
+
 
 /******************************************
 /* LAYOUT

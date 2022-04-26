@@ -5,16 +5,27 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Jeopard-ish</title>
+		<title>Jeopardy Online</title>
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-	</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/ca04e9de21ea3edb850bf0536d14679f?family=Swiss+911" rel="stylesheet" type="text/css"/>  
+  </head>
 	<body>
 
-		<h1>Jeopard-ish!</h1>
-    <span>Score:</span>
-    <span id="score">0</span>
+  <section id="title">  
+    <h1></h1>
+    <section class="logo">
+      <img src="images/jeopardy_logo.png">
+    </section>
+  </section>
+
+  <section id="hero-section">  
     <section id="game-container">
       <section id="category-row">
 
@@ -23,8 +34,16 @@
 
       </section>
     </section>
+  </section>  
+    <button type="button" id="start-game">START NEW GAME</button>
 
-    <button type="button" id="start-game">Start New Game</button>
+  <section class="score-counter"> 
+    <!-- <section class="logo">
+      <img src="images/jeopardy_logo.png">
+    </section> -->
+    <span>Score:</span>
+    <span id="score">&nbsp;0</span>
+  </section>  
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

@@ -24,7 +24,7 @@ function initBoard (){
 
   // GENERATE 5 ROWS, THEN PLACE 6 BOXES IN EACH ROW
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 5; i++) {
     let row = document.createElement('div')
     let boxValue = 200 * (i + 1)
     row.className = 'clue-row'
@@ -94,7 +94,7 @@ function buildCategories() {
 function resetBoard () {
   let clueParent = document.getElementById('clue-board')
   while(clueParent.firstChild) {
-    clueParent,removeChild(clueParent.firstChild)
+    clueParent.removeChild(clueParent.firstChild)
   }
   let catParent = document.getElementById('category-row')
   while(catParent.firstChild) {
